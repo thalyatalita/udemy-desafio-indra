@@ -12,11 +12,11 @@ public abstract class CoreBaseTest {
 	
 	@After
 	public void after(){
-//		if(driver != null){
-//		   driver.close();
-//		   driver.quit();
-//		}
-//		driver = null;
+		if(driver != null){
+		   driver.close();
+		   driver.quit();
+		}
+		driver = null;
 	}
 	
 	@Before

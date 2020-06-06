@@ -28,7 +28,7 @@ public abstract class CorePage<T> {
 	public String getUrl() {
 		return "";
 	}
-	
+
 	public void aguardarElemento(WebElement element) {
 		WebDriverWait driverWait = new WebDriverWait(this.driver, 30);
 		driverWait.until(ExpectedConditions.visibilityOf(element));

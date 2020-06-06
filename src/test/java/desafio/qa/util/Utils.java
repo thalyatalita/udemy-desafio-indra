@@ -11,11 +11,12 @@ import desafio.qa.core.CoreDriver;
 public abstract class Utils {
 
 	/**
-	 * Metodo para capturar screenshot
+	 * Método para capturar screenshot
 	 * @param driver 
 	 * @param fileName
 	 */
 	public static void takeScreenshot(WebDriver driver, String casoDeteste, String nomeEvidencia) {
+		
 		File scrFile = ((TakesScreenshot) CoreDriver.getDriver())
 				.getScreenshotAs(OutputType.FILE);
 		try {

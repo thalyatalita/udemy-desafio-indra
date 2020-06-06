@@ -1,9 +1,13 @@
-package desafio.qa.menu.page;
+package desafio.qa.page;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import desafio.qa.core.CoreDriver;
 import desafio.qa.core.CorePage;
 
@@ -64,17 +68,25 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	@FindBy(xpath = "//*[contains(@class,'header')]//*[text()='Ensino e estudo acadêmico']")
 	private WebElement categoriaEnsinoEstudoAcademico;
+	
+	@FindBy(xpath = "//h1[contains(text(),'Cursos de TI e software')]")
+	private WebElement titulo;
 
 	// MÈTODOS
 	
-	public void acessarMenuCategoria() {
+	public void menuCategoria() {
 		aguardarElementoVisivel(categoria);
 		moverCursorPara(categoria);
 	}
 	
+	public void validarTitulo(String texto) {
+		WebDriverWait driverWait = new WebDriverWait(CoreDriver.getDriver(), 30);
+		driverWait.until(ExpectedConditions.visibilityOf(titulo));
+		Assert.assertEquals(texto, titulo.getText());
+	}
+	
 	public void acessarCategoriaDesenvolvimento() {
 		aguardarElementoVisivel(categoriaDesenvolvimento);
-		moverCursorPara(categoriaDesenvolvimento);
 		click(categoriaDesenvolvimento);
 	}
 	
@@ -85,7 +97,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaNegocio() {
 		aguardarElementoVisivel(categoriaNegocio);
-		moverCursorPara(categoriaNegocio);
 		click(categoriaNegocio);
 	}
 	
@@ -96,7 +107,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaFinancas() {
 		aguardarElementoVisivel(categoriaFinancas);
-		moverCursorPara(categoriaFinancas);
 		click(categoriaFinancas);
 	}
 	
@@ -107,7 +117,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaTI() {
 		aguardarElementoVisivel(categoriaTI);
-		moverCursorPara(categoriaTI);
 		click(categoriaTI);
 	}
 	
@@ -118,7 +127,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaProdutividade() {
 		aguardarElementoVisivel(categoriaProdutividade);
-		moverCursorPara(categoriaProdutividade);
 		click(categoriaProdutividade);
 	}
 	
@@ -129,7 +137,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaDesenvolviementoPessoal() {
 		aguardarElementoVisivel(categoriaDesenvolvimentoPessoal);
-		moverCursorPara(categoriaDesenvolvimentoPessoal);
 		click(categoriaDesenvolvimentoPessoal);
 	}
 	
@@ -140,7 +147,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaDesign() {
 		aguardarElementoVisivel(categoriaDesign);
-		moverCursorPara(categoriaDesign);
 		click(categoriaDesign);
 	}
 	
@@ -151,7 +157,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaMarketing() {
 		aguardarElementoVisivel(categoriaMarketing);
-		moverCursorPara(categoriaMarketing);
 		click(categoriaMarketing);
 	}
 	
@@ -162,7 +167,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaEstiloVida() {
 		aguardarElementoVisivel(categoriaEstiloVida);
-		moverCursorPara(categoriaEstiloVida);
 		click(categoriaEstiloVida);
 	}
 	
@@ -173,7 +177,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaFotografia() {
 		aguardarElementoVisivel(categoriaFotografia);
-		moverCursorPara(categoriaFotografia);
 		click(categoriaFotografia);
 	}
 	
@@ -184,7 +187,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaSaudeFitness() {
 		aguardarElementoVisivel(categoriaSaudeFitness);
-		moverCursorPara(categoriaSaudeFitness);
 		click(categoriaSaudeFitness);
 	}
 	
@@ -195,7 +197,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaMusica() {
 		aguardarElementoVisivel(categoriaMusica);
-		moverCursorPara(categoriaMusica);
 		click(categoriaMusica);
 	}
 	
@@ -206,7 +207,6 @@ public class MenuCategoriaPage extends CorePage<MenuCategoriaPage> {
 	
 	public void acessarCategoriaEnsinoEstudoAcademico() {
 		aguardarElementoVisivel(categoriaEnsinoEstudoAcademico);
-		moverCursorPara(categoriaEnsinoEstudoAcademico);
 		click(categoriaEnsinoEstudoAcademico);
 	}	
 	

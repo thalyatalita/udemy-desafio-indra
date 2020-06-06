@@ -11,8 +11,6 @@ import desafio.qa.util.Property;
 public class CoreDriver {
 
 	static WebDriver driver;
-	//static String OS = System.getProperty("os.name").toLowerCase();
-	//static String OS_ARCH = System.getProperty("sun.arch.data.model").toLowerCase();
 
 	public static WebDriver getDriver() {
 		if (driver == null) {

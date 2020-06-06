@@ -1,4 +1,4 @@
-package desafio.qa.menu.page;
+package desafio.qa.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,7 +28,7 @@ public class MenuDesenvolvimentoPage extends CorePage<MenuDesenvolvimentoPage> {
 	private WebElement subCategoriaProdutividadeEscritorio;
 	
 	@FindBy(xpath = "//*[contains(@class,'header')]//*[text()='Desenvolvimento web']")
-	private WebElement subCategoriauDesenvolvimentoWeb;
+	private WebElement subCategoriaDesenvolvimentoWeb;
 	
 	@FindBy(xpath = "//*[contains(@class,'header')]//*[text()='Data Science']")
 	private WebElement subCategoriaDataScience;
@@ -56,14 +56,32 @@ public class MenuDesenvolvimentoPage extends CorePage<MenuDesenvolvimentoPage> {
 	public void acessarSubCategoriaProdutividadeEscritorio() {
 		aguardarElementoVisivel(subCategoriaProdutividadeEscritorio);
 		moverCursorPara(subCategoriaProdutividadeEscritorio);
+		click(subCategoriaProdutividadeEscritorio);
+	}
+	
+	public void moverCursorParaSubCategoriaProdutividadeEscritorio() {
+		aguardarElementoVisivel(subCategoriaProdutividadeEscritorio);
+		moverCursorPara(subCategoriaProdutividadeEscritorio);
 	}
 	
 	public void acessarSubCategoriaDesenvolvimentoWeb() {
-		aguardarElementoVisivel(subCategoriauDesenvolvimentoWeb);
-		moverCursorPara(subCategoriauDesenvolvimentoWeb);
+		aguardarElementoVisivel(subCategoriaDesenvolvimentoWeb);
+		moverCursorPara(subCategoriaDesenvolvimentoWeb);
+		click(subCategoriaDesenvolvimentoWeb);
+	}
+	
+	public void moverCursorParaSubCategoriaDesenvolvimentoWeb() {
+		aguardarElementoVisivel(subCategoriaDesenvolvimentoWeb);
+		moverCursorPara(subCategoriaDesenvolvimentoWeb);
 	}
 	
 	public void acessarSubCategoriaDataScience() {
+		aguardarElementoVisivel(subCategoriaDataScience);
+		moverCursorPara(subCategoriaDataScience);
+		click(subCategoriaDataScience);
+	}
+	
+	public void moverCursorParaSubCategoriaDataScience() {
 		aguardarElementoVisivel(subCategoriaDataScience);
 		moverCursorPara(subCategoriaDataScience);
 	}
@@ -71,9 +89,21 @@ public class MenuDesenvolvimentoPage extends CorePage<MenuDesenvolvimentoPage> {
 	public void acessarSubCategoriaAplicativosMoveis() {
 		aguardarElementoVisivel(subCategoriaAplicativosMoveis);
 		moverCursorPara(subCategoriaAplicativosMoveis);
+		click(subCategoriaAplicativosMoveis);
+	}
+	
+	public void moverCursorParaSubCategoriaAplicativosMoveis() {
+		aguardarElementoVisivel(subCategoriaAplicativosMoveis);
+		moverCursorPara(subCategoriaAplicativosMoveis);
 	}
 	
 	public void acessarSubCategoriaLinguagemProgramacao() {
+		aguardarElementoVisivel(subCategoriaLinguagemProgramacao);
+		moverCursorPara(subCategoriaLinguagemProgramacao);
+		click(subCategoriaLinguagemProgramacao);
+	}
+	
+	public void moverCursorParaSubCategoriaLinguagemProgramacao() {
 		aguardarElementoVisivel(subCategoriaLinguagemProgramacao);
 		moverCursorPara(subCategoriaLinguagemProgramacao);
 	}
@@ -81,9 +111,21 @@ public class MenuDesenvolvimentoPage extends CorePage<MenuDesenvolvimentoPage> {
 	public void acessarSubCategoriaDesenvolvimentoGames() {
 		aguardarElementoVisivel(subCategoriaDesenvolvimentoGames);
 		moverCursorPara(subCategoriaDesenvolvimentoGames);
+		click(subCategoriaDesenvolvimentoGames);
+	}
+	
+	public void moverCursorParaSubCategoriaDesenvolvimentoGames() {
+		aguardarElementoVisivel(subCategoriaDesenvolvimentoGames);
+		moverCursorPara(subCategoriaDesenvolvimentoGames);
 	}
 	
 	public void acessarSubCategoriaBancoDados() {
+		aguardarElementoVisivel(subCategoriaBancoDados);
+		moverCursorPara(subCategoriaBancoDados);
+		click(subCategoriaBancoDados);
+	}
+	
+	public void moverCursorSubCategoriaBancoDados() {
 		aguardarElementoVisivel(subCategoriaBancoDados);
 		moverCursorPara(subCategoriaBancoDados);
 	}
@@ -91,9 +133,21 @@ public class MenuDesenvolvimentoPage extends CorePage<MenuDesenvolvimentoPage> {
 	public void acessarSubCategoriaTesteSoftware() {
 		aguardarElementoVisivel(subCategoriaTesteSoftware);
 		moverCursorPara(subCategoriaTesteSoftware);
+		click(subCategoriaTesteSoftware);
+	}
+	
+	public void moverCursorParaSubCategoriaTesteSoftware() {
+		aguardarElementoVisivel(subCategoriaTesteSoftware);
+		moverCursorPara(subCategoriaTesteSoftware);
 	}
 	
 	public void acessarSubCategoriaEngenhariaSoftware() {
+		aguardarElementoVisivel(subCategoriaEngenhariaSoftware);
+		moverCursorPara(subCategoriaEngenhariaSoftware);
+		click(subCategoriaEngenhariaSoftware);
+	}
+	
+	public void moverCursorParaSubCategoriaEngenhariaSoftware() {
 		aguardarElementoVisivel(subCategoriaEngenhariaSoftware);
 		moverCursorPara(subCategoriaEngenhariaSoftware);
 	}
