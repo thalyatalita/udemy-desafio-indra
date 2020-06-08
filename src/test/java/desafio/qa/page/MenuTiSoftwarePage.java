@@ -12,9 +12,7 @@ import desafio.qa.core.CoreDriver;
 import desafio.qa.core.CorePage;
 
 /**
- * <h1>Classe page que contém o mapeamento dos elementos da subCategoria TI e
- * Software e com os métodos de interação com a tela.</h1>
- * 
+ * <h1>Classe page que contém o mapeamento dos elementos da subCategoria TI e Software e com os métodos de interação com a tela.</h1>
  * @author Thalya
  */
 public class MenuTiSoftwarePage extends CorePage<MenuTiSoftwarePage> {

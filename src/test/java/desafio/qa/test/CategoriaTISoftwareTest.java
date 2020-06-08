@@ -2,7 +2,7 @@ package desafio.qa.test;
 
 import org.junit.Test;
 import desafio.qa.core.CoreBaseTest;
-import desafio.qa.page.MenuCategoriaPage;
+import desafio.qa.page.CategoriaPage;
 import desafio.qa.page.MenuTiSoftwarePage;
 import desafio.qa.util.Property;
 import desafio.qa.util.Utils;
@@ -18,7 +18,7 @@ public class CategoriaTISoftwareTest extends CoreBaseTest {
 	 * 
 	 * <pre>
 	 * 1  - Acessa o plataforma Udemy
-	 * 2  - Acessa Menu Categoria
+	 * 2  - Acessa o Menu Categoria
 	 * 3  - Clicar em TI e Software 
 	 * 4  - Valida o titulo encontrado na tela com titulo esperado
 	 * 5  - Coleta Evidencia 
@@ -27,7 +27,7 @@ public class CategoriaTISoftwareTest extends CoreBaseTest {
 	@Test
 	public void acessarCategoriaTISoftware() {
 		
-		MenuCategoriaPage categoriaPage = new MenuCategoriaPage();
+		CategoriaPage categoriaPage = new CategoriaPage();
 		
 		driver.navigate().to(Property.URL);
 		
@@ -43,7 +43,7 @@ public class CategoriaTISoftwareTest extends CoreBaseTest {
 	 * <pre>
 	 * 1  - Acessa a plataforma Udemy
 	 * 2  - Acessa Menu Categoria
-	 * 3  - Acessa subMenu TI e Software 
+	 * 3  - Acessa no subMenu TI e Software 
 	 * 4  - Clica em Hardware
 	 * 5  - Valida o titulo encontrado na tela com o esperado
 	 * 6  - Coleta Evidencia 
@@ -52,7 +52,7 @@ public class CategoriaTISoftwareTest extends CoreBaseTest {
 	@Test
 	public void acessarSubCategoriaHardware() {
 		
-		MenuCategoriaPage categoriaPage = new MenuCategoriaPage();
+		CategoriaPage categoriaPage = new CategoriaPage();
 		MenuTiSoftwarePage subCategoriaTI = new MenuTiSoftwarePage();
 		
 		driver.navigate().to(Property.URL);
@@ -80,7 +80,7 @@ public class CategoriaTISoftwareTest extends CoreBaseTest {
 	@Test
 	public void acessarTopicoDaSubCategoria() {
 		
-		MenuCategoriaPage categoriaPage = new MenuCategoriaPage();
+		CategoriaPage categoriaPage = new CategoriaPage();
 		MenuTiSoftwarePage subCategoriaTI = new MenuTiSoftwarePage();
 		
 		driver.navigate().to(Property.URL);

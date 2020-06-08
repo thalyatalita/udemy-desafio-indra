@@ -1,6 +1,8 @@
 package desafio.qa.core;
 
 import static org.junit.Assert.fail;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,9 +31,12 @@ public abstract class CorePage<T> {
 		return "";
 	}
 
-	public void aguardarElemento(WebElement element) {
-		WebDriverWait driverWait = new WebDriverWait(this.driver, 30);
-		driverWait.until(ExpectedConditions.visibilityOf(element));
+	/** 
+	 * Método responsavél por acionar a tela Enter no campo.
+	 * 
+	 * */
+	public void pressionaEnter(WebElement element) {
+		element.sendKeys(Keys.ENTER);
 	}
 	
 	/** 
